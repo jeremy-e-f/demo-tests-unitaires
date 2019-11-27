@@ -1,4 +1,4 @@
-package dev.utils.test;
+package dev.utils;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
@@ -8,7 +8,7 @@ import dev.utils.StringUtils;
 public class StringUtilsTest {
 	
 	@Test
-	public void levenshteinDistanceTest(){
+	public void testLevenshteinDistance(){
 		String chaines1[]= {"chat","machins","aviron","distance","Chien",""};
 		String chaines2[]= {"chats","machine","avion","instance","Chine","chat"};
 		int resultatsAttendus[]= {1,1,1,2,2,4};
@@ -23,7 +23,7 @@ public class StringUtilsTest {
 	}
 	
 	@Test
-	public void levenshteinDistanceTestAvecNull(){
+	public void testLevenshteinDistanceAvecNull(){
 		String chaines1[]= {null,null,"aviron"};
 		String chaines2[]= {null,"machine",null};
 		int resultatsAttendus[]= {0,7,6};
